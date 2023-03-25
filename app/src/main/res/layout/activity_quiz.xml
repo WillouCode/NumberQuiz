@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/answerA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Réponse A"
+        android:filterTouchesWhenObscured="true"
+        app:layout_constraintBottom_toTopOf="@+id/answerB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question" />
+
+    <Button
+        android:id="@+id/answerB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Réponse B"
+        android:filterTouchesWhenObscured="true"
+        app:layout_constraintBottom_toTopOf="@+id/answerC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answerA" />
+
+    <Button
+        android:id="@+id/answerC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Réponse C"
+        android:filterTouchesWhenObscured="true"
+        app:layout_constraintBottom_toTopOf="@+id/answerD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answerB" />
+
+    <Button
+        android:id="@+id/answerD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Réponse D"
+        android:filterTouchesWhenObscured="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answerC" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
