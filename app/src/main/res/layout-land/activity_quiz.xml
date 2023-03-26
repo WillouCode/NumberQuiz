@@ -2,9 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/gradient_theme"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_theme"
     tools:context=".QuizActivity">
 
     <TextView
@@ -21,45 +21,49 @@
         android:id="@+id/answerA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Réponse A"
         android:filterTouchesWhenObscured="true"
-        app:layout_constraintBottom_toTopOf="@+id/answerB"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Réponse A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/answerB"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/question" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/answerB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Réponse B"
         android:filterTouchesWhenObscured="true"
-        app:layout_constraintBottom_toTopOf="@+id/answerC"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/answerA" />
+        android:text="Réponse B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/answerC"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/answerA"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/answerC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Réponse C"
         android:filterTouchesWhenObscured="true"
-        app:layout_constraintBottom_toTopOf="@+id/answerD"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/answerB" />
+        android:text="Réponse C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/answerD"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/answerB"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/answerD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Réponse D"
         android:filterTouchesWhenObscured="true"
+        android:text="Réponse D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/answerC" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/answerC"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/score"
