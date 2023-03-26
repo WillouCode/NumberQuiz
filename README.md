@@ -38,3 +38,7 @@ Le Lancement du Timer doit certainement s'effectuer deux fois dans le Cycle de C
 Problème d'UI :
 1)Le Toast permettant d'afficher une Réaction à la Réponse se supperpose au Bouton de Réponse D, le rendant innaccessible quelques instants
 2)L'enchaînement de Toast dans le cadre de Réponses successives accentue le Problème
+
+Autres :
+1)Utiliser les Ressources pour les String/ID améliorerait la Qualité du Code
+2)Factoriser certaines Méthodes améliorerait la Qualité du Code
